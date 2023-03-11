@@ -1,0 +1,26 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;800&display=swap');
+
+body {
+    font-family: 'Kanit', sans-serif;
+    font-size: 3vw;
+    background-color: #FCE4EC;
+}
+
+.cointainer {
+    max-width: 90%;
+    margin: 0 auto;
+
+}
+
+main {
+    margin: auto;
+
+}
+
+h1 {
+    font-size: 3vw;
+    font-weight: 800;
+    margin-top: 10%;
+    margin-left: 10%;
+}
