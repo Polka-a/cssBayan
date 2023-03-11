@@ -7,7 +7,7 @@ body {
     background-color: #FCE4EC;
 }
 
-.cointainer {
+.container {
     max-width: 90%;
     margin: 0 auto;
 
@@ -23,4 +23,15 @@ h1 {
     font-weight: 800;
     margin-top: 10%;
     margin-left: 10%;
+    margin-bottom: 1%;
+}
+
+.line {
+
+    width: 80%;
+    height: 1px;
+    background: #908989;
+    margin: 0 auto;
+   
+    
 }
