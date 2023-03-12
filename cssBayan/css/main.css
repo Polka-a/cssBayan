@@ -39,12 +39,16 @@ h1 {
     cursor: pointer;
     flex-wrap: wrap;
 
+
 }
 
-label {
+
+p {
     color: #E73A95;
-    font-size: 65%;
-    font-weight: 800;
+    font-size: 60%;
+    font-weight: 600;
+    flex-grow: 3;
+
 }
 
 .meme {
@@ -64,7 +68,7 @@ label {
     width: 100%;
 }
 
-.container:hover label {
+.container:hover p {
     color: #000;
     transition-duration: 0.3s;
 }
@@ -77,8 +81,8 @@ label {
 
 .plus {
     opacity: 0;
-    height: 2.5%;
-    width: 2.5%;
+    height: 2%;
+    width: 2%;
 }
 
 .item:hover .plus {
@@ -99,3 +103,20 @@ label+.input-hide:checked~.meme {
     width: 30%;
     height: 30%;
 }
+
+label+input:checked~p {
+    color: #000;
+
+}
+
+
+
+
+/* .input-hide:checked+label {
+    color: #000;
+} */
+
+/* 1. Добавить адаптив для указанных разрешений
+2. Переименовать коммиты (добавить дату)
+4. добавить поведение при клике на строку и иконку
+5. когда чек поинт отмечен строка должна быть всегда черная */
