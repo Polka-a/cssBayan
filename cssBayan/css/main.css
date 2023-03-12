@@ -1,0 +1,134 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;800&display=swap');
+
+body {
+    font-family: 'Kanit', sans-serif;
+    font-size: 3vw;
+    background-color: #FCE4EC;
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+main {
+    margin: auto;
+}
+
+h1 {
+    font-size: 3vw;
+    font-weight: 800;
+    margin-top: 10%;
+    /* margin-bottom: 2%; */
+}
+
+.line {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 100%;
+    height: 0.1vh;
+    background: #D7D2BE;
+}
+
+.item {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    flex-wrap: wrap;
+
+
+}
+
+
+p {
+    color: #E73A95;
+    font-size: 60%;
+    font-weight: 600;
+    flex-grow: 3;
+
+}
+
+.meme {
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    transition-duration: 0.5s;
+    flex-wrap: wrap;
+    /* background-color: #F5BEDA; */
+
+}
+
+.item:hover>.meme {
+    width: 30%;
+    height: 30%;
+}
+
+.break {
+    width: 100%;
+}
+
+.container:hover p {
+    color: #000;
+    transition-duration: 0.3s;
+}
+
+.container:hover .plus {
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+
+.plus {
+    opacity: 0;
+    height: 2%;
+    width: 2%;
+}
+
+.item:hover .plus {
+    transform: rotate(45deg);
+}
+
+
+label+.input-hide:checked~.meme {
+    display: none;
+}
+
+.input-hide {
+    display: none;
+}
+
+label+.input-hide:checked~.meme {
+    display: block;
+    width: 30%;
+    height: 30%;
+}
+
+label+input:checked~p {
+    color: #000;
+
+}
+
+.item:active p {
+    color: #F5BEDA;
+
+}
+
+.item:active img.plus {
+    filter: invert(78%) sepia(8%) saturate(1271%) hue-rotate(287deg) brightness(106%) contrast(92%);
+}
+
+.item:active .meme>img {
+    background-color: #F5BEDA;
+    transition-duration: 0.3s;
+    opacity: 0.4;
+}
+
+/* .input-hide:checked+label {
+    color: #000;
+} */
+
+/* 1. Добавить адаптив для указанных разрешений
+2. Переименовать коммиты (добавить дату)
