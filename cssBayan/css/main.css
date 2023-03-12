@@ -8,21 +8,18 @@ body {
 }
 
 .container {
-    max-width: 90%;
+    max-width: 70%;
     margin: 0 auto;
-
 }
 
 main {
     margin: auto;
-
 }
 
 h1 {
     font-size: 3vw;
     font-weight: 800;
     margin-top: 10%;
-    margin-left: 10%;
     margin-bottom: 1%;
 }
 
@@ -30,8 +27,29 @@ h1 {
 
     width: 80%;
     height: 1px;
-    background: #908989;
+    background: #D7D2BE;
+}
+
+a {
+    color: #000;
+    font-size: 65%;
+    font-weight: 800;
+}
+
+.meme {
+    width: 0;
+    height: 0;
     margin: 0 auto;
-   
-    
+    transition-duration: 0.5s;
+
+}
+
+img {
+    margin-bottom: 10%;
+}
+
+a:hover~.meme {
+
+    width: 30%;
+    height: 30%;
 }
