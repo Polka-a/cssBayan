@@ -57,6 +57,8 @@ p {
     margin: 0 auto;
     transition-duration: 0.5s;
     flex-wrap: wrap;
+    /* background-color: #F5BEDA; */
+
 }
 
 .item:hover>.meme {
@@ -109,8 +111,20 @@ label+input:checked~p {
 
 }
 
+.item:active p {
+    color: #F5BEDA;
 
+}
 
+.item:active img.plus {
+    filter: invert(78%) sepia(8%) saturate(1271%) hue-rotate(287deg) brightness(106%) contrast(92%);
+}
+
+.item:active .meme>img {
+    background-color: #F5BEDA;
+    transition-duration: 0.3s;
+    opacity: 0.4;
+}
 
 /* .input-hide:checked+label {
     color: #000;
@@ -118,5 +132,3 @@ label+input:checked~p {
 
 /* 1. Добавить адаптив для указанных разрешений
 2. Переименовать коммиты (добавить дату)
-4. добавить поведение при клике на строку и иконку
-5. когда чек поинт отмечен строка должна быть всегда черная */
